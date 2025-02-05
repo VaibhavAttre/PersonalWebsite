@@ -1,6 +1,7 @@
-import './components/Navbar'
 import NavigationBar from './components/Navbar'
 import MainPage from './components/MainPage'
+import About from './components/About';
+import { Routes, Route } from 'react-router-dom';
 import "./main.scss"
 
 function App() {
@@ -8,7 +9,10 @@ function App() {
   return (
     <>
       <NavigationBar/>
-      <MainPage/>
+      <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="about" element={<About />} />
+      </Routes>
     </>
   )
 }

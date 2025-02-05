@@ -15,14 +15,14 @@ function ParallaxBG({children}) {
   return (
     <>
     <Parallax pages={2}>
-      <ParallaxLayer offset={0} speed={3} style = {{zIndex: 20}} sticky={{start: 0, end: 4}}>
+      <ParallaxLayer offset={0} speed={3} style = {{zIndex: 20, pointerEvents: 'none'}} sticky={{start: 0, end: 4}}>
         <img
           src={airplane}
           style={{
           }}
         />
       </ParallaxLayer>
-      <ParallaxLayer offset={0} speed={0.5} style={{zIndex: 1}}>
+      <ParallaxLayer offset={0} speed={0.5} style={{zIndex: 1, pointerEvents: 'none'}}>
         <img
           src={image4}
           style={{
@@ -35,7 +35,7 @@ function ParallaxBG({children}) {
       <ParallaxLayer offset={0} speed={0.5} style={{zIndex: 7}}>
         {children}
       </ParallaxLayer>
-      <ParallaxLayer offset={0.1} speed={1.0} style={{zIndex: 10, opacity: 0.8}}>
+      <ParallaxLayer offset={0.1} speed={1.0} style={{zIndex: 10, opacity: 0.8, pointerEvents: 'none'}}>
         <img
           src={image2}
           style={{
@@ -45,7 +45,7 @@ function ParallaxBG({children}) {
           }}
         />
       </ParallaxLayer>
-      <ParallaxLayer offset={0.15} speed={1.5} style={{zIndex: 15, opacity: 0.8}}>
+      <ParallaxLayer offset={0.15} speed={1.5} style={{zIndex: 15, opacity: 0.8, pointerEvents: 'none'}}>
         <img
           src={image3}
           style={{
@@ -55,7 +55,7 @@ function ParallaxBG({children}) {
           }}
         />
       </ParallaxLayer>
-      <ParallaxLayer offset={0.65} speed={2} style={{zIndex: 20, opacity: 0.3}}>
+      <ParallaxLayer offset={0.65} speed={2} style={{zIndex: 20, opacity: 0.3, pointerEvents: 'none'}}>
         <img
           src={image2}
           style={{
@@ -65,7 +65,7 @@ function ParallaxBG({children}) {
           }}
         />
       </ParallaxLayer>
-      <ParallaxLayer offset={0.8} speed={2.5} style={{zIndex: 25, opacity: 0.2}}>
+      <ParallaxLayer offset={0.8} speed={2.5} style={{zIndex: 25, opacity: 0.2, pointerEvents: 'none'}}>
         <img
           src={image3}
           style={{
@@ -75,7 +75,7 @@ function ParallaxBG({children}) {
           }}
         />
       </ParallaxLayer>
-      <ParallaxLayer offset={0.75} speed={2.6} style={{zIndex: 35, opacity: 0.99}}>
+      <ParallaxLayer offset={0.75} speed={2.6} style={{zIndex: 35, opacity: 0.99, pointerEvents: 'none'}}>
         <img 
           src={image7}
           style={{
@@ -85,7 +85,7 @@ function ParallaxBG({children}) {
           }}
         />
       </ParallaxLayer>
-      <ParallaxLayer offset={0.93} speed={1} style={{zIndex: 32}}>
+      <ParallaxLayer offset={0.93} speed={1} style={{zIndex: 32, pointerEvents: 'none'}}>
         <img
           src={image5}
           style={{
@@ -95,7 +95,7 @@ function ParallaxBG({children}) {
           }}
         />
       </ParallaxLayer>
-      <ParallaxLayer offset={1} speed={2.5} style={{zIndex: 30}}>
+      <ParallaxLayer offset={1} speed={2.5} style={{zIndex: 30, pointerEvents: 'none'}}>
         <img
           src={image9}
           style={{
@@ -105,7 +105,7 @@ function ParallaxBG({children}) {
           }}
         />
       </ParallaxLayer>
-      <ParallaxLayer offset={1} speed={3.5} style={{zIndex: 32}}>
+      <ParallaxLayer offset={1} speed={3.5} style={{zIndex: 32, pointerEvents: 'none'}}>
         <img
           src={image8}
           style={{
@@ -115,7 +115,7 @@ function ParallaxBG({children}) {
           }}
         />
       </ParallaxLayer>
-      <ParallaxLayer offset={1} speed={5.5} style={{zIndex: 32}}>
+      <ParallaxLayer offset={1} speed={5.5} style={{zIndex: 32, pointerEvents: 'none'}}>
         <img
           src={image10}
           style={{
