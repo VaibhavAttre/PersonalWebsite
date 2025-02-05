@@ -1,0 +1,93 @@
+//@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500&family=Lato:wght@500;700&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+$heading-font: "Pixelify Sans", serif;
+$body-font: 'Pixelify Sans', sans-serif;
+$nav-font: 'Pixelify Sans', sans-serif;
+$navbar-height: 60px;
+
+.main-content {
+  margin-top: $navbar-height;
+  padding-top: 200px;
+}
+
+
+body {
+  font-family: $body-font;
+  letter-spacing: 0.02rem;
+  padding-top: 70px;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+  font-family: $heading-font;
+  font-weight: 600;
+
+  &.display-1 {
+    font-weight: 700;
+    letter-spacing: -0.03em;
+  }
+}
+
+.navbar {
+  font-family: $nav-font;
+  font-weight: 500;
+
+  &-brand {
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+
+    &:hover {
+      color: #fff !important;
+    }
+  }
+
+  .dropdown-menu {
+    font-family: $body-font;
+  }
+}
+
+.btn {
+  font-family: $nav-font;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+
+  &-outline {
+    &-primary,
+    &-secondary,
+    &-success {
+      border-width: 2px;
+    }
+  }
+}
+
+.lead {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  font-weight: 300;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#projects {
+  h2 {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .btn-outline-primary {
+    min-width: 120px;
+  }
+}
