@@ -51,7 +51,7 @@ export default function ProjectGallery() {
     return (
         <>
             <div>
-                {/* Mapping text to one page */}
+                {/* Mapping text to one horizontal layer */}
                 <Parallax pages={4} horizontal>
                     {[...Array(4)].map((_, index) => (
                         <ParallaxLayer key={`bg-${index}`} offset={index} speed={0.2}>
@@ -114,6 +114,7 @@ export default function ProjectGallery() {
                         </ParallaxLayer>
                     ))}
 
+                    {/*Mapping images to the horizontal layers */}
                     {[...Array(4)].map((_, index) => (
                         <ParallaxLayer key={`grass-${index}`} offset={index} speed={1}>
                             <Container>
