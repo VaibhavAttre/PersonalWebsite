@@ -7,12 +7,15 @@ import image1 from '../assets/dusk/sky.png';
 import image2 from '../assets/personalimg.jfif'
 
 export default function About() {
+
+  //Using spring to create a fade in effect from -10px to 0 px
   const fadeIn = useSpring({
     from: { opacity: 0, transform: 'translateY(-10px)' },
     to: { opacity: 1, transform: 'translateY(0)' },
     config: { duration: 1000 } 
   });
 
+  //Using spring to create a pulse animation for certain keywords
   const pulse = useSpring({
     to: [
       { transform: 'scale(1.2)', opacity: 1 },
@@ -23,12 +26,10 @@ export default function About() {
     config: { duration: 1000 } 
   });
 
+  //Returns a component for the about me page alongside simple fade in animations
   return (
     <Container fluid className="vh-100 d-flex align-items-center justify-content-center position-relative">
-      {/* Background Image */}
       <Image src={image1} className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" />
-
-      {/* Content */}
       <Container className="text-center position-relative">
         <Row>
           <animated.div style={fadeIn}>

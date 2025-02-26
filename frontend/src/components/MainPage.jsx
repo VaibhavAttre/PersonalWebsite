@@ -6,11 +6,14 @@ import { useSpring, animated } from '@react-spring/web';
 
 function MainPage() {
 
+    //Fades in name and other important information
     const fadeIn = useSpring({
         from: { opacity: 0, transform: 'translateY(-10px)' },
         to: { opacity: 1, transform: 'translateY(0)' },
         config: { duration: 1000 } 
       });
+
+    //Returns a component for the main page (using parallax effects)
     return (
         <>
             <ParallaxBG>
@@ -24,9 +27,6 @@ function MainPage() {
                             </animated.p>
                             <animated.div style = {fadeIn} className="mt-4 text-end">
                                 <Link to="/about" className="btn btn-primary me-3">About Me</Link>
-                                <Button variant="success" href="#projects">
-                                    View Projects
-                                </Button>
                             </animated.div>
                         </Col>
                     </Row>
