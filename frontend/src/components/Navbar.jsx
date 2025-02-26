@@ -12,16 +12,18 @@ function NavigationBar() {
       <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
         <span className="brand-text">VAIBHAV ATTRE</span>
       </Navbar.Brand>
-
+          {/*To Main page*/}
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />  
           <Navbar.Collapse id="responsive-navbar-nav">  
+            {/* Other important pages (make projects into one list in future) */}
             <Nav className="me-auto">  
               <Nav.Link as={Link} to={"/About"}>About Me</Nav.Link>  
               <Nav.Link as = {Link} to={"/project1"}>TurboThrill</Nav.Link>  
               <Nav.Link as = {Link} to={"/flatfilemanager"}>Flat File Manager</Nav.Link>  
               <Nav.Link as = {Link} to={"/projects"}>Projects</Nav.Link> 
               <Nav.Link as = {Link} to={"/image-generator"}>Random-Image-Generator</Nav.Link>  
-            </Nav>  
+            </Nav>
+            {/* Links to linkedin and github */}  
             <Nav>  
               <Nav.Link href="https://www.linkedin.com/in/vaibhav-attre-89005024a/">LinkedIn</Nav.Link>  
               <Nav.Link href="https://github.com/VaibhavAttre">GitHub</Nav.Link>  

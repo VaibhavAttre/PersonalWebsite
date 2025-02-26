@@ -17,6 +17,7 @@ function MainPage() {
     return (
         <>
             <ParallaxBG>
+                {/*Main content that goes in the parallax BG for front page beside images*/}
                 <Container className="mt-1 pt-3 text-end">
                     <Row className="justify-content-end">
                         <Col md={8}>

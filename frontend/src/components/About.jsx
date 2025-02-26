@@ -31,6 +31,7 @@ export default function About() {
     <Container fluid className="vh-100 d-flex align-items-center justify-content-center position-relative">
       <Image src={image1} className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" />
       <Container className="text-center position-relative">
+        {/* Name and interest */}
         <Row>
           <animated.div style={fadeIn}>
             <h1 className="display-4 text-light fw-bold mb-3">I'm <span className='text-warning'>Vaibhav</span></h1>
@@ -49,6 +50,7 @@ export default function About() {
             </Col>
 
           <Col>
+          {/* The text in about me page */}
             <animated.div style={fadeIn}>
               <h3 className="h5 text-light fw-bold mb-3 lh-lg">
                 I am a Computer Science student at UC Irvine. Over the last 10 years, I have come to love 

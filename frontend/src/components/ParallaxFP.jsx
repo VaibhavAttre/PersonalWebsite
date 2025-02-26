@@ -18,6 +18,7 @@ function ParallaxBG({children}) {
   return (
     <>
     <Parallax pages={2}>
+      {/* First layer (high up in sky) */}
       <ParallaxLayer offset={0} speed={3} style = {{zIndex: 20, pointerEvents: 'none'}} sticky={{start: 0, end: 4}}>
         <img
           src={airplane}
@@ -78,6 +79,7 @@ function ParallaxBG({children}) {
           }}
         />
       </ParallaxLayer>
+      {/* Second sky layer */}
       <ParallaxLayer  offset={0.9999999} speed={.5} style={{ zIndex: 35, pointerEvents: 'auto' }}>
         <ProjectCarousel/>
       </ParallaxLayer>
@@ -102,7 +104,7 @@ function ParallaxBG({children}) {
         />
         
       </ParallaxLayer>
-
+      {/* The Ground */}
       <ParallaxLayer offset={1} speed={2.5} style={{zIndex: 30, pointerEvents: 'none'}}>
         <img
           src={image9}
