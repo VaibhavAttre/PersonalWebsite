@@ -19,7 +19,7 @@ function ParallaxBG({children}) {
     <>
     <Parallax pages={2}>
       {/* First layer (high up in sky) */}
-      <ParallaxLayer offset={0} speed={3} style = {{zIndex: 20, pointerEvents: 'none'}} sticky={{start: 0, end: 4}}>
+      <ParallaxLayer offset={0} speed={3} style = {{zIndex: 20, pointerEvents: 'none'}} sticky={{start: 0, end: 4}} className="d-none d-md-block">
         <img
           src={airplane}
           style={{

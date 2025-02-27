@@ -18,9 +18,9 @@ function MainPage() {
         <>
             <ParallaxBG>
                 {/*Main content that goes in the parallax BG for front page beside images*/}
-                <Container className="mt-1 pt-3 text-end">
+                <Container className="mt-1 pt-3 text-md-end text-center">
                     <Row className="justify-content-end">
-                        <Col md={8}>
+                        <Col xs={12} md={8}>
                             <animated.h1 style = {fadeIn} className="display-1 text-end">Hi, I'm Vaibhav Attre</animated.h1>
                             <animated.p style = {fadeIn} className="display-6 text-end">
                                 I'm a passionate developer and Computer Science Student.
