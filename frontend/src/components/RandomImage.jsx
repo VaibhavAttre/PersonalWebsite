@@ -13,7 +13,7 @@ const RandomImage = () => {
         setLoading(true);
         setError("");
         try {
-            const response = await axios.get("https://personalwebsite-b739.onrender.com/api/random-image?query=pixel"); 
+            const response = await axios.get("https://personalwebsite-cd5g.onrender.com/api/random-image?query=pixel"); 
             setImage(response.data.imageUrl);
         } catch (err) {
             setError("Failed to fetch image. Please try again.");

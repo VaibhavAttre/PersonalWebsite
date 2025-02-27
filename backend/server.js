@@ -16,7 +16,7 @@ app.get("/api/random-image", async (req, res) => {
     try {
         const query = req.query.query;
         const URL = `https://pixabay.com/api/?key=${API_KEY}&q=${encodeURIComponent(query)}&image_type=photo&per_page=50`;
-
+        
         const response = await axios.get(URL);
         const images = response.data.hits;
 
